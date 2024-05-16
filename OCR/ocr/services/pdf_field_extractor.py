@@ -16,6 +16,7 @@ class PDFFieldExtractor:
         """
         self.file_path = file_path
         self.reader = None
+        self.writer = None
         self.form_fields = []
 
     def initialize_reader(self, base_path: Optional[str] = None) -> None:
@@ -30,6 +31,7 @@ class PDFFieldExtractor:
             base_path = os.path.dirname(__file__)
         full_path = os.path.join(base_path, self.file_path)
         self.reader = pypdf.PdfReader(full_path)
+        self.writer = pypdf.PdfWriter()
 
     def close_reader(self) -> None:
         """
@@ -38,6 +40,21 @@ class PDFFieldExtractor:
         if self.reader is not None:
             self.reader.stream.close()
             self.reader = None
+
+    def fill_out_pdf(self):
+        self.writer.clone_reader_document_root(self.reader)
+
+        page = self.reader.pages[0]
+        fields = self.reader.get_fields()
+        print(fields)
+
+        self.writer.add_page(page)
+
+        self.writer.update_page_form_field_values(self.writer.pages[0], {"City": "Dallas Yo!"})
+
+        # write "output" to PyPDF2-output.pdf
+        with open("filled-out.pdf", "wb") as output_stream:
+            self.writer.write(output_stream)
 
     def list_annotations(self):
         """
@@ -58,6 +75,7 @@ class PDFFieldExtractor:
                 field_name = annot.get("/T")
                 rect = annot.get("/Rect")
                 subtype = annot.get("/Subtype")
+                annot.set()
                 print(f"Annotation - Type: {subtype}, Field Name: {field_name}, Coordinates: {rect}")
 
     def generate_random_color(self) -> str:
