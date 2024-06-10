@@ -107,3 +107,18 @@ class ImageSegmenter:
 
     def segment(self) -> dict[str, np.ndarray]:
         return self.segmentation_function(self)
+    
+    def update_segment(self, label, new_value):
+        segments = self.segment()
+        if label in segments:
+            segments[label] = new_value
+        return segments
+
+    def save_segments(self, segments, output_dir):
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+        for label, segment in segments.items():
+            if segment is not None:
+                cv.imwrite(os.path.join(output_dir, f"{label}_segment.png"), segment)
+            else:
+                print(f"Segment for {label} is None and cannot be saved.")
