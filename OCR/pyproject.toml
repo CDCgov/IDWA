@@ -12,6 +12,11 @@ opencv-python = "^4.9.0.80"
 python-dotenv = "^1.0.1"
 transformers = {extras = ["torch"], version = "^4.39.3"}
 pillow = "^10.3.0"
+pypdf = "^3.0.1"
+pymupdf = "^1.24.2"
+pytest = "^8.1.1"
+pdf2image = "^1.17.0"
+pytest-mock = "^3.14.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.3.7"

@@ -44,3 +44,13 @@ To view installed packages in the virtual env
 ```shell
 poetry show
 ```
+
+To lint your files using ruff
+```shell
+ruff check --fix
+```
+
+To format your files using ruff 
+```shell
+ruff format
+```
