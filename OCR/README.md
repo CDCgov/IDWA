@@ -44,3 +44,10 @@ To view installed packages in the virtual env
 ```shell
 poetry show
 ```
+
+
+## Credits
+
+Some files in this project were sourced from [jaswanth04/Checkbox_Detection](https://github.com/jaswanth04/Checkbox_Detection).
+
+Special thanks to [jaswanth04](https://github.com/jaswanth04) for the original work.
