@@ -1,0 +1,66 @@
+[
+    {
+        "key": "Collected",
+        "value": "05/24/2024 / 11:32 EDT"
+    },
+    {
+        "key": "Age",
+        "value": "01/15/1928"
+    },
+    {
+        "key": "Gender",
+        "value": "M"
+    },
+    {
+        "key": "Phone",
+        "value": "NG"
+    },
+    {
+        "key": "Specimen",
+        "value": "WCO"
+    },
+    {
+        "key": "Requisition",
+        "value": ""
+    },
+    {
+        "key": "Lab Ref#",
+        "value": ""
+    },
+    {
+        "key": "Received",
+        "value": "05/25/2024 / 11:27 EDT"
+    },
+    {
+        "key": "Reported",
+        "value": "05/28/2024 / 14:52 EDT"
+    },
+    {
+        "key": "Client#",
+        "value": "CA000000, Das, Anuka, DOTHOUSE HEALTH, 1353 Dorchester AVE, DORCHESTER, MA 02122-2932"
+    },
+    {
+        "key": "Test Name",
+        "value": "RPR(monitor) W/REFL TITER (REPL) RPR ( MONITOR) W/ REFL TITER Treponema PALLIDIUM AB, PARTICLE AGGLUTINATION. The Treponema pallidum particle agglutination assay is a treponemal assay that is intended to be used with other tests (e.g. RPR) as part of a diagnostic algorithm in the diagnosis of syphilis."
+    },
+    {
+        "key": "In Range",
+        "value": "Non-Reactive"
+    },
+    {
+        "key": "Out of Range",
+        "value": "Reactive"
+    },
+    {
+        "key": "Reference Range",
+        "value": "NON-Reactive"
+    },
+    {
+        "key": "Lab",
+        "value": "NL2"
+    },
+    {
+        "key": "Performing Site",
+        "value": "M2 QUEST DIAGNOSTICS MASSACHUSETTS LLM. 200 FOREST STREET"
+    }
+]

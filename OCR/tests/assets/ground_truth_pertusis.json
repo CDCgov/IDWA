@@ -1,0 +1,410 @@
+[
+    {
+        "key": "Health Department",
+        "value": "Texas Department of State Health Services"
+    },
+    {
+        "key": "Infectious Disease Control Unit",
+        "value": "Texas Department of State Health Services"
+    },
+    {
+        "key": "Phone",
+        "value": "(512) 776-7676"
+    },
+    {
+        "key": "Fax",
+        "value": "(512) 776-7616"
+    },
+    {
+        "key": "Email",
+        "value": "conner@cdc.gov"
+    },
+    {
+        "key": "CONFIRMED",
+        "value": ":unselected:"
+    },
+    {
+        "key": "PROBABLE",
+        "value": ":SELECTED:"
+    },
+    {
+        "key": "RULED OUT / NOT A CASE",
+        "value": ":unselected:"
+    },
+    {
+        "key": "NBS PATIENT ID#",
+        "value": "6139875648"
+    },
+    {
+        "key": "NBS INVESTIGATION ID#",
+        "value": "2345169354"
+    },
+    {
+        "key": "Patient’s Name",
+        "value": "Bueller, Jeanie"
+    },
+    {
+        "key": "Address",
+        "value": "12 longhorn way, Austin, TX 73301"
+    },
+    {
+        "key": "City",
+        "value": "Austin"
+    },
+    {
+        "key": "County",
+        "value": "Williamson"
+    },
+    {
+        "key": "Zip",
+        "value": "73301"
+    },
+    {
+        "key": "Region",
+        "value": ""
+    },
+    {
+        "key": "Phone",
+        "value": "(512) 436-2156"
+    },
+    {
+        "key": "Parent/Guardian",
+        "value": "Katie Bueller"
+    },
+    {
+        "key": "Physician",
+        "value": "Dr. George Bailey"
+    },
+    {
+        "key": "Physician Phone",
+        "value": "(512) 544-7111"
+    },
+    {
+        "key": "Physician Address",
+        "value": "919 E 32nd St, Austin, TX 78705"
+    },
+    {
+        "key": "Check box if history of homelessness in last 6 months",
+        "value": ":selected:"
+    },
+    {
+        "key": "Reported by",
+        "value": "Dr. King Schultz"
+    },
+    {
+        "key": "Reporting Agency",
+        "value": "CDC"
+    },
+    {
+        "key": "Reporting Agency Address",
+        "value": "12 longhorn way, Austin, TX 73301"
+    },
+    {
+        "key": "Date reported",
+        "value": "03/20/2024"
+    },
+    {
+        "key": "Investigated by",
+        "value": "Dr. Sarah Conner"
+    },
+    {
+        "key": "Investigating Agency",
+        "value": "CDC"
+    },
+    {
+        "key": "Investigation start date",
+        "value": "03/20/2024"
+    },
+    {
+        "key": "Date investigation completed",
+        "value": "03/25/2024"
+    },
+    {
+        "key": "DATE OF BIRTH",
+        "value": "03/20/2016"
+    },
+    {
+        "key": "AGE",
+        "value": "8"
+    },
+    {
+        "key": "PLACE OF BIRTH",
+        "value": "USA"
+    },
+    {
+        "key": "SEX",
+        "value": "Female"
+    },
+    {
+        "key": "RACE - White",
+        "value": ":selected:"
+    },
+    {
+        "key": "RACE - Black",
+        "value": ":unselected:"
+    },
+    {
+        "key": "RACE - Asian",
+        "value": ":unselected:"
+    },
+    {
+        "key": "RACE - Native Hawaiian or Other Pac Islander",
+        "value": ":unselected:"
+    },
+    {
+        "key": "RACE - Am Indian or Alaska Native",
+        "value": ":unselected:"
+    },
+    {
+        "key": "RACE - Unknown",
+        "value": ":unselected:"
+    },
+    {
+        "key": "HISPANIC",
+        "value": "No"
+    },
+    {
+        "key": "Was the patient <12 months old?",
+        "value": "Yes"
+    },
+     {
+        "key": "Obstetrician's name, address and phone#:",
+        "value": ""
+    },
+     {
+        "key": "If yes, estimated date and location of delivery",
+        "value": ""
+    },
+    {
+        "key": "Mother’s age at date of infant birth",
+        "value": "25"
+    },
+    {
+        "key": "Infant birth weight",
+        "value": "6 lbs 6 oz"
+    },
+    {
+        "key": "If female, is patient currently pregnant?",
+        "value": "No"
+    },
+    {
+        "key": "WERE ANTIBIOTICS GIVEN?",
+        "value": "Yes"
+    },
+    {
+        "key": "Azithromycin",
+        "value": ":unselected:"
+    },
+    {
+        "key": "Azithromycin Date Started",
+        "value": ":unselected:"
+    },
+     {
+        "key": "Azithromycin Days",
+        "value": ":unselected:"
+    },
+    {
+        "key": "Bactrim",
+        "value": ":selected:"
+    },
+     {
+        "key": "Bactrim Date Started",
+        "value": "3/20/24"
+    },
+     {
+        "key": "Bactrim Days",
+        "value": "5"
+    },
+    {
+        "key": "Clarithromycin",
+        "value": ":unselected:"
+    },
+    {
+        "key": "Clarithromycin Date Started",
+        "value": ""
+    },
+    {
+        "key": "Clarithromycin Days",
+        "value": ":unselected:"
+    },
+      {
+        "key": "Erythromycin",
+        "value": ":unselected:"
+    },
+    {
+        "key": "Erythromycin Date Started",
+        "value": ""
+    },
+    {
+        "key": "Erythromycin Days",
+        "value": ":unselected:"
+    },
+    {
+        "key": "Other 1",
+        "value": ""
+    },
+    {
+        "key": "Other1 Date Started",
+        "value": ""
+    },
+    {
+        "key": "Other1 Days",
+        "value": ""
+    },
+    {
+        "key": "Other 2",
+        "value": ""
+    },
+    {
+        "key": "Other 2 Date Started",
+        "value": ""
+    },
+    {
+        "key": "Other 2 Days",
+        "value": ""
+    },
+    {
+        "key": "Was the patient hospitalized for this illness?",
+        "value": "Yes"
+    },
+    {
+        "key": "Hospitalized at",
+        "value": "St. David’s"
+    },
+     {
+        "key": "Admitted ",
+        "value": "3/20/24"
+    },
+     {
+        "key": "Discharged",
+        "value": "3/25/24"
+    },
+    {
+        "key": "Duration of Stay",
+        "value": "5 days"
+    },
+     {
+        "key": "Did Patient Die Yes",
+        "value": "Unselected "
+    },
+      {
+        "key": "Did Patient Die Yes Date",
+        "value": ""
+    },
+      {
+        "key": "Did Patient Die No",
+        "value": "Selected "
+    },
+     {
+        "key": "Did Patient Die Unknown",
+        "value": "Unselected "
+    },
+    {
+      "key": "Symptom onset date:",
+      "value": "03/16 / 24"
+    },
+    {
+      "key": "Diagnosis date:",
+      "value": "3/20/ 24"
+    },
+    {
+      "key": "Illness end date:",
+      "value": "3/ 25 / 24"
+    },
+     {
+      "key": "Final Cough Duration (total # of days):",
+      "value": "9Days"
+    },
+    {
+      "key": "Date of final interview:",
+      "value": "03 / 25 / 24"
+    },
+    {
+      "key": "Paroxysmal Cough Yes",
+      "value": "Selected"
+    },
+    {
+      "key": "Paroxysmal Cough No",
+      "value": "UnSelected"
+    },
+    {
+      "key": "Inspiratory Whoop Yes",
+      "value": "Selected"
+    },
+     {
+      "key": "Inspiratory Whoop No",
+      "value": "Unselected"
+    },
+    {
+      "key": "Post-tussive Vomiting Yes",
+      "value": "Selected"
+    },
+    {
+      "key": "Post-tussive Vomiting No",
+      "value": "Unselected"
+    },
+    {
+      "key": "Apnea(excluse cyanotic episode) (under 1 yr old only) Yes",
+      "value": "Unselected"
+    },
+      {
+      "key": "Apnea(excluse cyanotic episode) (under 1 yr old only) No",
+      "value": "Selected"
+    },
+     {
+      "key": "Is the patient still coughing at final interview? Yes",
+      "value": "Selected"
+    },
+      {
+      "key": "Is the patient still coughing at final interview? No",
+      "value": "Unselected"
+    },
+     {
+      "key": "Date of final interview:",
+      "value": "03 / 25 / 24"
+    },
+    {
+      "key": "Acute Encephalopathy Yes",
+      "value": "Unselected"
+    },
+    {
+      "key": "Acute Encephalopathy No",
+      "value": "Selected"
+    },
+    {
+      "key": "Cyanosis after Paroxysm Yes",
+      "value": "selected"
+    },
+    {
+      "key": "Cyanosis after Paroxysm No",
+      "value": "unSelected"
+    },
+    {
+      "key": "Seizures (Focal or Generalized) Yes",
+      "value": "unSelected"
+    },
+    {
+      "key": "Seizures (Focal or Generalized) No",
+      "value": "Selected"
+    },
+     {
+      "key": "Pneumonia Chest X-Ray Yes",
+      "value": "Selected"
+    },
+    {
+      "key": "Pneumonia Chest X-Ray No",
+      "value": "UnSelected"
+    },
+     {
+      "key": "Other Yes",
+      "value": "UnSelected"
+    },
+    {
+      "key": "Other No",
+      "value": "Selected"
+    },
+    {
+      "key": "Does Patient have history of Asthma/Bronchitis?",
+      "value": "No"
+    }
+]

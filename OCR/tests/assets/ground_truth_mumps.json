@@ -1,0 +1,339 @@
+[
+       {
+        "key": "Health Department",
+        "value": "Texas Department of State Health Services"
+    },
+    {
+        "key": "Infectious Disease Control Unit",
+        "value": "Texas Department of State Health Services"
+    },
+
+      {
+        "key": "NBS PATIENT ID#",
+        "value": "543698251"
+    },
+    {
+        "key": "NBS INVESTIGATION ID#",
+        "value": "203469257"
+    },
+    {
+        "key": "Patient's Name",
+        "value": "Skywalker, Luke"
+    },
+    {
+        "key": "Address",
+        "value": "2929 Cherry Ln."
+    },
+    {
+        "key": "City",
+        "value": "Denver"
+    },
+    {
+        "key": "County",
+        "value": "Denver"
+    },
+    {
+        "key": "Zip",
+        "value": "80045"
+    },
+    {
+        "key": "Region",
+        "value": ""
+    },
+    {
+        "key": "Phone",
+        "value": "720-632-4698"
+    },
+    {
+        "key": "Parent/Guardian",
+        "value": "Anakin Skywalker"
+    },
+    {
+        "key": "Physician",
+        "value": "Dr. Victor Frankenstein"
+    },
+    {
+        "key": "Physician Phone",
+        "value": ""
+    },
+    {
+        "key": "Physician Address",
+        "value": "777 Bannock St. Denver, CO"
+    },
+    {
+        "key": "History of Homelessness",
+        "value": "isSelected"
+    },
+    {
+        "key": "Occupation",
+        "value": ""
+    },
+    {
+        "key": "Reported by",
+        "value": "Dr. Rocky Balboa"
+    },
+    {
+        "key": "Agency",
+        "value": "CDC"
+    },
+    {
+        "key": "Phone1",
+        "value": "404-639-331"
+    },
+    {
+        "key": "Date Reported1",
+        "value": "04/05/23"
+    },
+    {
+        "key": "Investigated by",
+        "value": "Dr. Peter Venkman"
+    },
+    {
+        "key": "Agency (Investigated by)",
+        "value": "CDC"
+    },
+    {
+        "key": "Phone (Investigated by)",
+        "value": "404-639-331"
+    },
+    {
+        "key": "Email (Investigated by)",
+        "value": "Venkman@cdc.gov"
+    },
+    {
+        "key": "Investigation start date",
+        "value": "04/05/24"
+    },
+    {
+        "key": "Date investigation completed",
+        "value": "04/05/24"
+    },
+    {
+        "key": "Date of Birth",
+        "value": "02/09/14"
+    },
+    {
+        "key": "Age",
+        "value": "10"
+    },
+    {
+        "key": "Place of Birth USA",
+        "value": "unselected"
+    },
+    {
+        "key": "Place of Birth Other",
+        "value": "selected Japan"
+    },
+    {
+        "key": "Place of Birth Unknown",
+        "value": "not selected"
+    },
+    {
+        "key": "SEX Male",
+        "value": "selected"
+    },
+    {
+        "key": "SEX Female",
+        "value": "unselected"
+    },
+    {
+        "key": "SEX Unknown",
+        "value": "unselected"
+    },
+    {
+        "key": "RACE White",
+        "value": "unselected"
+    },
+    {
+        "key": "RACE Black",
+        "value": "unselected"
+    },
+    {
+        "key": "RACE Asian",
+        "value": "selected"
+    },
+    {
+        "key": "RACE Native Hawaiian or Other Pacific Islander",
+        "value": "unselected"
+    },
+    {
+        "key": "RACE American Indian or Alaska Native",
+        "value": "unselected"
+    },
+    {
+        "key": "RACE Unknown",
+        "value": "unselected"
+    },
+    {
+        "key": "Hispanic Yes",
+        "value": "unselected"
+    },
+    {
+        "key": "Hispanic No",
+        "value": "unselected"
+    },
+    {
+        "key": "Hispanic Unknown",
+        "value": "unselected"
+    },
+    {
+        "key": "Did Patient die? Yes",
+        "value": "unselected"
+    },
+    {
+        "key": "Did Patient die? Died on",
+        "value": ""
+    },
+    {
+        "key": "Did Patient die? No, but still ill",
+        "value": "selected"
+    },
+    {
+        "key": "Did Patient die? No, Recovered",
+        "value": "unselected"
+    },
+    {
+        "key": "Did Patient die? Unknown",
+        "value": "unselected"
+    },
+    {
+        "key": "Is patient currently pregnant? Yes",
+        "value": "unselected"
+    },
+    {
+        "key": "Is patient currently pregnant? No",
+        "value": "unselected"
+    },
+    {
+        "key": "Is patient currently pregnant? Unknown",
+        "value": "unselected"
+    },
+    {
+        "key": "Obstetrician's name, address, and phone #",
+        "value": ""
+    },
+    {
+        "key": "Estimated date and location of delivery",
+        "value": ""
+    },
+    {
+        "key": "Illness onset date",
+        "value": "04/05/24"
+    },
+    {
+        "key": "Illness end date",
+        "value": ""
+    },
+    {
+        "key": "First Symptom Reported",
+        "value": "04/01/24"
+    },
+    {
+        "key": "Parotitis Onset Date",
+        "value": "04/05/24"
+    },
+    {
+        "key": "Parotitis Duration",
+        "value": "2 days"
+    },
+    {
+        "key": "Parotitis Swelling Right side",
+        "value": "unselected"
+    },
+    {
+        "key": "Parotitis Swelling Left side",
+        "value": "unselected"
+    },
+    {
+        "key": "Parotitis Swelling Bilateral",
+        "value": "selected"
+    },
+    {
+        "key": "Parotitis Swelling Unknown",
+        "value": "selected"
+    },
+    {
+        "key": "Fever",
+        "value": "Yes: Selected"
+    },
+    {
+        "key": "Fever onset date",
+        "value": "04/03/24"
+    },
+    {
+        "key": "Headache",
+        "value": "Yes: Selected"
+    },
+    {
+        "key": "Headache onset date",
+        "value": "04/03/24"
+    },
+    {
+        "key": "Loss of appetite",
+        "value": "No: Selected"
+    },
+    {
+        "key": "Myalgia",
+        "value": "No: Selected"
+    },
+    {
+        "key": "Malaise",
+        "value": "Yes: Selected"
+    },
+    {
+        "key": "Malaise onset date",
+        "value": "04/03/24"
+    },
+    {
+        "key": "Complications Meningitis",
+        "value": "No: Selected"
+    },
+    {
+        "key": "Complications Deafness",
+        "value": "No: Selected"
+    },
+    {
+        "key": "Complications Oophoritis",
+        "value": "No: Selected"
+    },
+    {
+        "key": "Complications Pancreatitis",
+        "value": "No: Selected"
+    },
+    {
+        "key": "Complications Encephalitis No",
+        "value": "Selected"
+    },
+    {
+        "key": "Complications Orchitis No",
+        "value": " Selected"
+    },
+    {
+        "key": "Complications Mastitis",
+        "value": "No: Selected"
+    },
+    {
+        "key": "Pelvic inflammatory disease",
+        "value": "No: Selected"
+    },
+    {
+        "key": "Hospitalized for illness",
+        "value": "Yes: Selected"
+    },
+    {
+        "key": "Hospitalized at",
+        "value": "Denver Health"
+    },
+    {
+        "key": "Admitted",
+        "value": "04/05/24"
+    },
+    {
+        "key": "Discharged",
+        "value": "04/05/24"
+    },
+    {
+        "key": "Duration of stay",
+        "value": "1 day"
+    }
+]

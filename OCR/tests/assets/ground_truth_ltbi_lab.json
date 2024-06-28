@@ -1,0 +1,70 @@
+[
+    {
+        "key": "Berkshire Health Systems, Inc.",
+        "value": "Department of Pathology and Laboratory Medicine"
+    },
+    {
+        "key": "Jessica D. Krochmal MD. Medical Director",
+        "value": ""
+    },
+    {
+        "key": "Address",
+        "value": "725 North Street, Pittsfield, MA. 01201"
+    },
+    {
+        "key": "Phone",
+        "value": "413-395-7888"
+    },
+    {
+        "key": "Fax",
+        "value": "413-395-7671"
+    },
+    {
+        "key": "Run Date/Time",
+        "value": "06,10/24-0921"
+    },
+    {
+        "key": "Laboratory Report",
+        "value": ""
+    },
+    {
+        "key": "Name",
+        "value": "Velvet Red"
+    },
+    {
+        "key": "Sub Dr",
+        "value": "Aleyamma Jacob, FNP"
+    },
+    {
+        "key": "Status",
+        "value": "Dep REF"
+    },
+    {
+        "key": "Reg",
+        "value": "06/04/24"
+    },
+    {
+        "key": "Dis",
+        "value": ""
+    },
+    {
+        "key": "Specimen",
+        "value": "0604:Q"
+    },
+    {
+        "key": "Collected",
+        "value": "06/04/24 -0848"
+    },
+    {
+        "key": "Received",
+        "value": "06/04/24-1312"
+    },
+    {
+        "key": "Ordered",
+        "value": "TBQUANT-UNSPUN"
+    },
+    {
+        "key": "Test",
+        "value": "Quantiferon-TB GAMMA INTERFERON MITOGEN- NIL TB1- NIL TB2- NIL, Result: POSITIVE, In health persons who have a low likelihood of M. tuberculosis infection, a single positive QFT result should not be taken as reliable evidence of M. tuberculosis infection, Repeat testing, whith either the initial test of a different test, may be considered on a case-by-case basis. .06 > IU/ML 10.00 IU/ML .38 IU/ML .51 IU/ML The NIL tube value reflects the background interferon gamma imune response of the patient's blood sample. This value has been subtracted from the patient's displayed TB and Mitogen results. Lower than expected results with the Mitogen tube present false-negative Quantiferon readings by detecting a patient with a potential immune supressive condition and/or suboptimal pre-analytical specimen handling. The TB1 Antigen tube is coated with a M.tuberculosis-specific antigen designed to elicit responses from TB antigen primed CD4+ helper T-lymphocytes. The TB2 antigen tube is coated with M. tuberculosis-specific antigens designed to elicit responses from TB antigen primed CD4+ helper and CD8+ cytotoxic T-lymphocytes., THIS TEST WAS PERFORMED AT: QUEST DIAGNOSIS LLC 200 FOREST STREET MARLBOROUGH, MA 01752-3023"
+    }
+]

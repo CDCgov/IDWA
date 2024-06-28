@@ -1,0 +1,438 @@
+[
+    {
+      "key": "Phone:",
+      "value": "(512) 776-7676"
+    },
+    {
+      "key": "Fax:",
+      "value": "(512) 776-7616"
+    },
+    {
+      "key": "NBS PATIENT ID#:",
+      "value": "6139875648"
+    },
+    {
+      "key": "CONFIRMED",
+      "value": ":unselected:"
+    },
+    {
+      "key": "PROBABLE",
+      "value": ":selected:"
+    },
+    {
+      "key": "RULED OUT /NOT A CASE",
+      "value": ":unselected:"
+    },
+    {
+      "key": "NBS INVESTIGATION ID#:",
+      "value": null
+    },
+    {
+      "key": "Patient's Name:",
+      "value": "Bueller Jeanie"
+    },
+    {
+      "key": "Address:",
+      "value": "12 longhorn way"
+    },
+    {
+      "key": "City:",
+      "value": "Austin"
+    },
+    {
+      "key": "County:",
+      "value": "Williamson"
+    },
+    {
+      "key": "Region:",
+      "value": null
+    },
+    {
+      "key": "Phone:",
+      "value": "(512) 436-2156"
+    },
+    {
+      "key": "Parent/Guardian:",
+      "value": "Katie Bueller"
+    },
+    {
+      "key": "Physician:",
+      "value": "Dr. George Bailey"
+    },
+    {
+      "key": "Phone:",
+      "value": "(512) 544-7111"
+    },
+    {
+      "key": "Reported by:",
+      "value": "Dr. King Schultz"
+    },
+    {
+      "key": "Agency:",
+      "value": "CDC"
+    },
+    {
+      "key": "Phone:",
+      "value": "(404 ) 639-3311"
+    },
+    {
+      "key": "Zip:",
+      "value": "73301"
+    },
+    {
+      "key": "Date reported:",
+      "value": "3 /20 /24"
+    },
+    {
+      "key": "Investigated by:",
+      "value": "Dr. Sarah Conner"
+    },
+    {
+      "key": "Address:",
+      "value": "919 E 32nd St, Austin, TX 78705\nabcdefghijklmnopqrstuvqrxyz"
+    },
+    {
+      "key": "Check box if history of homelessness in last 6 months",
+      "value": ":selected:"
+    },
+    {
+      "key": "Agency:",
+      "value": "CDC"
+    },
+    {
+      "key": "Phone:",
+      "value": "(404 ) 639-3311"
+    },
+    {
+      "key": "Email:",
+      "value": "conner@cdc.gov"
+    },
+    {
+      "key": "Investigation start date:",
+      "value": "3 /20 /24"
+    },
+    {
+      "key": "Date investigation completed:",
+      "value": "3 /25 /24"
+    },
+    {
+      "key": "DATE OF BIRTH:",
+      "value": "1 124 /16"
+    },
+    {
+      "key": "AGE:",
+      "value": "8"
+    },
+    {
+      "key": "USA",
+      "value": ":selected:"
+    },
+    {
+      "key": "Other:",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Unknown",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Male",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Female",
+      "value": ":selected:"
+    },
+    {
+      "key": "Unknown",
+      "value": ":unselected:"
+    },
+    {
+      "key": "White",
+      "value": ":selected:"
+    },
+    {
+      "key": "Black",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Asian",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Native Hawaiian or Other Pac. Islander",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Am. Indian or Alaska Native",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Unknown",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Other:",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Yes",
+      "value": ":unselected:"
+    },
+    {
+      "key": "No",
+      "value": ":selected:"
+    },
+    {
+      "key": "Unknown",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Yes",
+      "value": ":selected:"
+    },
+    {
+      "key": "No",
+      "value": ":unselected:"
+    },
+    {
+      "key": "If yes, Mother's age at date of infant birth:",
+      "value": "25"
+    },
+    {
+      "key": "Infant birth weight:",
+      "value": "6\nIbs 6\noz OR\nOR"
+    },
+    {
+      "key": "Unknown",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Yes",
+      "value": ":unselected:"
+    },
+    {
+      "key": "No",
+      "value": ":selected:"
+    },
+    {
+      "key": "Unknown",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Obstetrician's name, address, and phone #:",
+      "value": "123456789\nABCDEFGHIJKLMNOPQRSTUVWRXYZ"
+    },
+    {
+      "key": "If yes, estimated date and location of delivery:",
+      "value": "/\n/"
+    },
+    {
+      "key": "Symptom onset date:",
+      "value": "03 /16 /24"
+    },
+    {
+      "key": "Diagnosis date:",
+      "value": "3 /20 /24"
+    },
+    {
+      "key": "Illness end date:",
+      "value": "3\n/25 /24"
+    },
+    {
+      "key": "Final Cough Duration (total # of days):",
+      "value": "9\nDays"
+    },
+    {
+      "key": "Yes",
+      "value": ":selected:"
+    },
+    {
+      "key": "No",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Azithromycin:",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Date Started:",
+      "value": "/\n/"
+    },
+    {
+      "key": "Bactrim:",
+      "value": ":selected:"
+    },
+    {
+      "key": "/20 /24\n3",
+      "value": null
+    },
+    {
+      "key": "Date Started:",
+      "value": null
+    },
+    {
+      "key": "Clarithromycin:",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Date Started:",
+      "value": "/"
+    },
+    {
+      "key": "Yes",
+      "value": ":selected:"
+    },
+    {
+      "key": "No",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Erythromycin:",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Date Started:",
+      "value": null
+    },
+    {
+      "key": "Yes",
+      "value": ":selected:"
+    },
+    {
+      "key": "DINo",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Other:",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Date Started:",
+      "value": null
+    },
+    {
+      "key": "IYes",
+      "value": ":selected:"
+    },
+    {
+      "key": "No",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Other:",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Date Started:",
+      "value": null
+    },
+    {
+      "key": "Date of final interview:",
+      "value": "03 /25 /24"
+    },
+    {
+      "key": "Yes",
+      "value": ":unselected:"
+    },
+    {
+      "key": "No",
+      "value": ":selected:"
+    },
+    {
+      "key": "Yes",
+      "value": ":selected:"
+    },
+    {
+      "key": "No",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Yes",
+      "value": ":selected:"
+    },
+    {
+      "key": "No",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Hospitalized at:",
+      "value": "St. David's"
+    },
+    {
+      "key": "Admitted:3",
+      "value": "20 /24"
+    },
+    {
+      "key": "Discharged:",
+      "value": "3 /25 /24"
+    },
+    {
+      "key": "Yes",
+      "value": ":unselected:"
+    },
+    {
+      "key": "No",
+      "value": ":selected:"
+    },
+    {
+      "key": "Duration of Stay:",
+      "value": "5\ndays"
+    },
+    {
+      "key": "Yes",
+      "value": ":selected:"
+    },
+    {
+      "key": "No",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Yes",
+      "value": ":unselected:"
+    },
+    {
+      "key": "No",
+      "value": ":selected:"
+    },
+    {
+      "key": "Yes*,",
+      "value": ":unselected:"
+    },
+    {
+      "key": "died on:",
+      "value": null
+    },
+    {
+      "key": "Yes",
+      "value": ":selected:"
+    },
+    {
+      "key": "No",
+      "value": ":unselected:"
+    },
+    {
+      "key": "No",
+      "value": ":selected:"
+    },
+    {
+      "key": "Yes",
+      "value": ":unselected:"
+    },
+    {
+      "key": "No",
+      "value": ":selected:"
+    },
+    {
+      "key": "Unknown",
+      "value": ":unselected:"
+    },
+    {
+      "key": "Yes",
+      "value": ":unselected:"
+    },
+    {
+      "key": "No",
+      "value": ":selected:"
+    }
+]

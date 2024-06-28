@@ -102,6 +102,8 @@ class ImageSegmenter:
         self.labels = labels
 
         if self.debug is True:
+            self.debug_folder = "debug_segments"
+            os.makedirs(self.debug_folder, exist_ok=True)
             print(f"raw_image shape: {self.raw_image.shape}")
             print(f"segmentation_template shape: {self.segmentation_template.shape}")
 
