@@ -19,6 +19,7 @@ poetry run pytest
 
 Run benchmark tests
 ```shell
+cd tests
 poetry run pytest bench_test.py -v
 ```
 

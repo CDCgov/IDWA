@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - zedd/model-benchmark
     paths:
       - .github/workflows/ocr-benchmarks.yml
       - OCR/**
@@ -24,7 +25,7 @@ jobs:
       - name: Run tests
         run: |
           cd OCR/tests
-          poetry run pytest bench_test.py -v --benchmark-json output.json
+          poetry run pytest benchmark_test.py -v --benchmark-json output.json
       - name: Store benchmark result
         uses: benchmark-action/github-action-benchmark@v1
         with:

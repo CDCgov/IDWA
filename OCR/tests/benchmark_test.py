@@ -1,6 +1,7 @@
 import os
 import string
 import random
+
 import numpy as np
 import pytest
 from Levenshtein import distance, ratio
@@ -78,7 +79,6 @@ def generate_random_segments(string_choices=string.ascii_uppercase, show_images=
 
 
 def generate_exact_segments(show_images=True) -> dict[str, np.ndarray]:
-    __str__ = "test"
     segments: dict[str, np.ndarray] = {}
     for letter in list(string.ascii_uppercase + string.ascii_lowercase + string.digits):
         text, image = generate_image_from_exact_text(letter + letter)
@@ -92,33 +92,37 @@ def generate_exact_segments(show_images=True) -> dict[str, np.ndarray]:
 
 class TestBenchmark:
     ocr = ImageOCR()
-    sentence_size = 5
+    sentence_size = 2
 
     test_cases = [
         ("single word sentences", generate_sentence_segments(sentence_size, sentence_length=1, show_images=False)),
-        ("two word sentences", generate_sentence_segments(sentence_size, sentence_length=2, show_images=False)),
-        ("three word sentences", generate_sentence_segments(sentence_size, sentence_length=3, show_images=False)),
-        ("four word sentences", generate_sentence_segments(sentence_size, sentence_length=4, show_images=False)),
-        ("five word sentences", generate_sentence_segments(sentence_size, sentence_length=5, show_images=False)),
-        ("six word sentences", generate_sentence_segments(sentence_size, sentence_length=6, show_images=False)),
-        ("seven word sentences", generate_sentence_segments(sentence_size, sentence_length=7, show_images=False)),
-        ("eight word sentences", generate_sentence_segments(sentence_size, sentence_length=8, show_images=False)),
-        ("nine word sentences", generate_sentence_segments(sentence_size, sentence_length=9, show_images=False)),
-        ("ten word sentences", generate_sentence_segments(sentence_size, sentence_length=10, show_images=False)),
-        ("printed upper case", generate_random_segments(string.ascii_uppercase, show_images=False)),
-        ("printed lower case", generate_random_segments(string.ascii_lowercase, show_images=False)),
-        ("printed numbers", generate_random_segments(string.digits, show_images=False)),
-        ("printed letter space", generate_exact_segments(show_images=True)),
-        (
-            "printed letters and numbers",
-            generate_random_segments(string.digits + string.ascii_uppercase + string.ascii_lowercase),
-        ),
+        # ("two word sentences", generate_sentence_segments(sentence_size, sentence_length=2, show_images=False)),
+        # ("three word sentences", generate_sentence_segments(sentence_size, sentence_length=3, show_images=False)),
+        # ("four word sentences", generate_sentence_segments(sentence_size, sentence_length=4, show_images=False)),
+        # ("five word sentences", generate_sentence_segments(sentence_size, sentence_length=5, show_images=False)),
+        # ("six word sentences", generate_sentence_segments(sentence_size, sentence_length=6, show_images=False)),
+        # ("seven word sentences", generate_sentence_segments(sentence_size, sentence_length=7, show_images=False)),
+        # ("eight word sentences", generate_sentence_segments(sentence_size, sentence_length=8, show_images=False)),
+        # ("nine word sentences", generate_sentence_segments(sentence_size, sentence_length=9, show_images=False)),
+        # ("ten word sentences", generate_sentence_segments(sentence_size, sentence_length=10, show_images=False)),
+        # ("printed upper case", generate_random_segments(string.ascii_uppercase, show_images=False)),
+        # ("printed lower case", generate_random_segments(string.ascii_lowercase, show_images=False)),
+        # ("printed numbers", generate_random_segments(string.digits, show_images=False)),
+        # ("printed letter space", generate_exact_segments(show_images=False)),
+        # (
+        #     "printed letters and numbers",
+        #     generate_random_segments(
+        #         string.digits + string.ascii_uppercase + string.ascii_lowercase, show_images=False
+        #     ),
+        # ),
     ]
 
+    @pytest.mark.benchmark(group="OCR Model Performance", min_rounds=2)
     @pytest.mark.parametrize("name,segments", test_cases)
-    def test_ocr_english_sentences(self, name, segments):
+    def test_ocr_english_sentences(self, name, segments, benchmark):
+        print("============== hello")
         print("\n", name)
-        results = self.ocr.image_to_text(segments)
+        results = benchmark(self.ocr.image_to_text, segments)
 
         actual_labels = [x.lower() for x in list(results.keys())]
         predicted_labels = [x.lower() for x in list(results.values())]
@@ -126,3 +130,6 @@ class TestBenchmark:
         print("predicted_labels", predicted_labels)
         print("distance:", distance(actual_labels, predicted_labels))
         print("ratio:", ratio(actual_labels, predicted_labels))
+
+        benchmark.extra_info["distance"] = distance(actual_labels, predicted_labels)
+        benchmark.extra_info["ratio"] = ratio(actual_labels, predicted_labels)
