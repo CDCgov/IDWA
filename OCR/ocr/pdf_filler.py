@@ -64,64 +64,99 @@ def get_hav_vaccine_info(data):
     
     return doses_received, str(year_of_last_dose), 0 if total_doses > 0 else 1
 
-def fill_pdf(input_pdf_path, output_pdf_path, data):
+def fill_pdf(input_pdf_path, output_pdf_path, validation_path, data):
     """Fill PDF form with provided data."""
     race_values, ethnicity_value = get_race_ethnicity(data)
     doses_received, year_of_last_dose, hav_vaccine = get_hav_vaccine_info(data)
     case_phone = data['attributes']['telecom'].split('-')
     date_of_birth = data['attributes']['birthdate_as_localdate'].split('-')
+    age = f"{data['attributes']['AGE']}"
+    alt_result_date = fake.date()
+    ast_result_date = fake.date()
+    address = data['attributes']['address']
+    address_1 = fake.street_address()
+    address_2 = fake.secondary_address()
+    admit_date =  fake.date()
+    age_1 = str(2024 - int(fake.year()))
+    age_2 = str(2024 - int(fake.year()))
+    age_3 = str(2024 - int(fake.year()))
+    age_4 = str(2024 - int(fake.year()))
+    agency = fake.company()
+    agency_investigating =  fake.company()
+    native = race_values['Am Indian or Alaska Native']
+    asian = race_values['Asian']
+    black = race_values['Black']
+    phone = f"  {case_phone[0]}     {case_phone[1]}-{case_phone[2]}"
+    city = data['attributes']['city']
+    county = data['attributes']['county']
+    dob = f"  {date_of_birth[0]}     {date_of_birth[1]}       {date_of_birth[2]}"
+    date_investigation_completed = fake.date()
+    date_of_diagnosis = fake.date()
+    date_of_lab_test = fake.date()
+    date_reported = fake.date()
+    email = fake.company_email()
+    investigation_name = fake.name()
+    investigation_start_date = fake.date()
+    investigator_phone = fake.phone_number()
+    reported_by = fake.name()
+    reported_phone = fake.phone_number()
+    patient_first_name = data['attributes']['first_name'],
+    patient_last_name = data['attributes']['last_name'],
+    parent_guardian =  data['attributes']['name_father'],
+    physician = get_primary_physician_last_name(data),
+    physician_phone = fake.phone_number(),
 
     form_data = {
         '1': '1',
         '1_2': '1_2',
         '2': '2',
         '2_2': '2_2',
-        'AGE': f"{data['attributes']['AGE']}",
+        'AGE': age,
         'ALT SGPT Result': 'ALT SGPT Result',
-        'ALT result date': fake.date(),
+        'ALT result date': alt_result_date ,
         'AST SGPT Result': 'AST SGPT Result',
-        'AST result date': fake.date(),
-        'Address': data['attributes']['address'],
-        'Address 1': fake.street_address(),
-        'Address 2': fake.secondary_address(),
-        'Admit date': fake.date(),
-        'Age 1': str(2024 - int(fake.year())),
-        'Age 2': str(2024 - int(fake.year())),
-        'Age 3': str(2024 - int(fake.year())),
-        'Age 4': str(2024 - int(fake.year())),
-        'Agency': fake.company(),
-        'Agency_Investigating': fake.company(),
-        'Am Indian or Alaska Native': race_values['Am Indian or Alaska Native'],
-        'Asian': race_values['Asian'],
+        'AST result date': ast_result_date,
+        'Address': address,
+        'Address 1': address_1,
+        'Address 2': address_2,
+        'Admit date': admit_date,
+        'Age 1': age_1,
+        'Age 2': age_2,
+        'Age 3': age_3,
+        'Age 4': age_4,
+        'Agency': agency,
+        'Agency_Investigating': agency_investigating,
+        'Am Indian or Alaska Native': native,
+        'Asian': asian,
         'Assoc_child_daycare': 0,
         'Assoc_daycare': 0,
         'Assoc_outbreak': 0,
         'Babysitter': 0,
         'Bilirubin elevated': 0,
         'Bilirubin test date': 'Bilirubin test date',
-        'Black': race_values['Black'],
-        'Case Phone': f"  {case_phone[0]}     {case_phone[1]}-{case_phone[2]}",
+        'Black': black,
+        'Case Phone': phone,
         'Case Status': 0,
         'Check box if history of homelessness in last 6 months': True,
         'Child care': 0,
-        'City': data['attributes']['city'],
+        'City': city,
         'Comments': 'Comments',
         'Contact': 0,
         'Contact - HH': 0,
-        'County': data['attributes']['county'],
-        'DATE OF BIRTH': f"  {date_of_birth[0]}     {date_of_birth[1]}       {date_of_birth[2]}",
+        'County': county,
+        'DATE OF BIRTH': dob,
         'DOD': 'DOD',
-        'Date investigation completed': fake.date(),
-        'Date of Diagnosis': fake.date(),
-        'Date of lab test': fake.date(),
-        'Date reported': fake.date(),
+        'Date investigation completed': date_investigation_completed,
+        'Date of Diagnosis': date_of_diagnosis,
+        'Date of lab test': date_of_lab_test,
+        'Date reported': date_reported,
         'Die from hepatitis': 0,
         'Discharge date': 'Discharge date',
         "Doses of HAV vaccine rec'd": doses_received,
         'Duration of Stay': 'Duration of Stay',
         'EDD': 'EDD',
         'Earliest date PH control initiated': 'Earliest date PH control initiated',
-        'Email': fake.company_email(),
+        'Email': email,
         'Epi linked': 0,
         'Evaluation of elevated liver enzymes': True,
         'Followup testing prior viral hepatitis maker': True,
@@ -146,9 +181,9 @@ def fill_pdf(input_pdf_path, output_pdf_path, data):
         'If yes where_2': 'If yes where_2',
         'IgM anti-HAV': 0,
         'Ilness End Date': 'Ilness End Date',
-        'Investigated by': fake.name(),
-        'Investigation start date': fake.date(),
-        'Investigator phone': fake.phone_number(),
+        'Investigated by': investigation_name,
+        'Investigation start date': investigation_start_date,
+        'Investigator phone': investigator_phone,
         'Jaundiced': 0,
         'Last day of work': fake.date(),
         'Last day of work_2': fake.date(),
@@ -169,19 +204,19 @@ def fill_pdf(input_pdf_path, output_pdf_path, data):
         'Other reason for testing specified': 'Other reason for testing specified',
         'Other_2': 'Other_2',
         'Other_Contact': 0,
-        'ParentGuardian': data['attributes']['name_father'],
-        'Patients First Name': data['attributes']['first_name'],
-        'Patients Last Name': data['attributes']['last_name'],
-        'Physician': get_primary_physician_last_name(data),
-        'Physician phone': fake.phone_number(),
+        'ParentGuardian': parent_guardian,
+        'Patients First Name': patient_first_name,
+        'Patients Last Name': patient_last_name,
+        'Physician': physician,
+        'Physician phone': physician_phone,
         'Place of Birth': 0 if data['attributes']['birth_country'].lower() in ['us', 'usa'] else 1,
         'Playmate_': 0,
         'Region': 'Region',
         'Relation to Case 2': 'Relation to Case 2',
         'Relation to Case 3': 'Relation to Case 3',
         'Relation to Case 4': 'Relation to Case 4',
-        'Reported by': fake.name(),
-        'Reporter Phone': fake.phone_number(),
+        'Reported by': reported_by,
+        'Reporter Phone': reported_phone,
         'SEX': 0 if data['attributes']['gender'].lower() in ['m', 'male'] else 1 if data['attributes']['gender'].lower() in ['f', 'female'] else 2,
         'Screening of asymptomatic patient w risk factors': True,
         'Screening of asymptomatic patient wo risk factors': True,
@@ -210,12 +245,38 @@ def fill_pdf(input_pdf_path, output_pdf_path, data):
         'undefined_14': race_values['undefined_14'],
     }
 
+    json_data = {
+        'patient_first_name': patient_first_name,
+        'patient_last_name': patient_last_name,
+        'address': address,
+        'city': city,
+        'parent_guardian': parent_guardian,
+        'physician': physician,
+        'physician_phone': physician_phone,
+        'physician_address': address_1,
+        'physician_address': address_2,
+        'reported_by': reported_by,
+        'agency': agency,
+        'agency_investigating': agency_investigating,
+        'agency_phone': investigator_phone,
+        'agency_email': email,
+        'investigation_start_date': investigation_start_date,
+        'date_investigation_completion': date_investigation_completed
+    }
+
+    json_string = json.dumps(json_data, indent=4)
+
+
     filled = PdfWrapper(input_pdf_path).fill(form_data)
 
     with open(output_pdf_path, 'wb') as output:
         output.write(filled.read())
+    with open(validation_path, 'w') as json_output:
+        json_output.write(json_string)
 
-def process_json_folder(json_folder, pdf_template, output_folder):
+
+
+def process_json_folder(json_folder, pdf_template, output_folder, validation_folder):
     """Process all JSON files in a folder and generate filled PDFs."""
     for filename in os.listdir(json_folder):
         if filename.endswith('.json'):
@@ -224,14 +285,15 @@ def process_json_folder(json_folder, pdf_template, output_folder):
                 data = json.load(json_file)
             
             output_pdf_path = os.path.join(output_folder, f"{os.path.splitext(filename)[0]}.pdf")
-            fill_pdf(pdf_template, output_pdf_path, data)
+            fill_pdf(pdf_template, output_pdf_path, validation_folder, data)
 
 if __name__ == "__main__":
     current_dir = os.getcwd()
     json_folder = os.path.join(current_dir, "json_files")
     pdf_template = os.path.join(current_dir, "hepatitis_a.pdf")
     output_folder = os.path.join(current_dir, "output_pdfs")
+    validation_folder = os.path.join(current_dir, "validation_jsons")
     
     os.makedirs(output_folder, exist_ok=True)
     
-    process_json_folder(json_folder, pdf_template, output_folder)
+    process_json_folder(json_folder, pdf_template, output_folder, validation_folder)

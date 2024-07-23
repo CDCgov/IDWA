@@ -1,0 +1,83 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "first_name": {
+        "type": "string"
+      },
+      "last_name": {
+        "type": "string"
+      },
+      "address": {
+        "type": "string"
+      },
+      "city": {
+        "type": "string"
+      },
+      "county": {
+        "type": "string"
+      },
+      "zip": {
+        "type": "string",
+        "pattern": "^[0-9]{5}(-[0-9]{4})?$"
+      },
+      "Physician": {
+        "type": "string"
+      },
+      "Physician_phone_number": {
+        "type": "string",
+        "pattern": "^\\+?[1-9]\\d{1,14}$"
+      },
+      "Physician_address": {
+        "type": "string"
+      },
+      "reported_by": {
+        "type": "string"
+      },
+      "agency": {
+        "type": "string"
+      },
+      "reporter_phone": {
+        "type": "string",
+        "pattern": "^\\+?[1-9]\\d{1,14}$"
+      },
+      "date_reported": {
+        "type": "string",
+        "format": "date"
+      },
+      "investigated_by": {
+        "type": "string"
+      },
+      "Agency_Investigating": {
+        "type": "string"
+      },
+      "investigation_start_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "date_investigation_completed": {
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "required": [
+      "first_name",
+      "last_name",
+      "address",
+      "city",
+      "county",
+      "zip",
+      "Physician",
+      "Physician_phone_number",
+      "Physician_address",
+      "reported_by",
+      "agency",
+      "reporter_phone",
+      "date_reported",
+      "investigated_by",
+      "Agency_Investigating",
+      "investigation_start_date",
+      "date_investigation_completed"
+    ]
+  }
+  
