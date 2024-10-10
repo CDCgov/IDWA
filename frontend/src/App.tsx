@@ -19,12 +19,12 @@ function App() {
                 <AppHeader jurisdiction={`Demo STLT`}/>
                 <div className="display-flex flex-row height-full">
                     <div
-                        className="flex-3 padding-top-1 padding-left-1 padding-right-4 minw-15 usa-dark-background bg-primary-dark text-base-lightest display-flex flex-column flex-gap-1 maxw-30"
+                        className="flex-3 padding-top-1 padding-left-1 padding-right-4 minw-15 usa-dark-background bg-primary-dark text-base-lightest display-flex flex-column flex-gap-1 maxw-30 side-nav"
                         >
                         <div className='display-flex flex-column flex-align-start padding-top-2'>
                             {navLinks.map((i, idx) => {
                                 return <Link key={idx} href={i.url}
-                                             className={`border-left-2px padding-left-1 padding-top-2 padding-bottom-2 ${i.url === pathname ? 'text-bold' : 'border-primary-dark'}`}>{i.text}</Link>
+                                             className={`border-left-2px padding-left-1 padding-top-2 padding-bottom-2 nav-link ${i.url === pathname ? 'text-bold' : 'border-primary-dark'}`}>{i.text}</Link>
                             })}
                         </div>
                     </div>

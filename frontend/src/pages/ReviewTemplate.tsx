@@ -217,7 +217,7 @@ const ReviewTemplate: React.FC = () => {
         </div>
         <div className="width-50">
           <div
-            className="width-full height-full bg-white border-gray-5 border-1px"
+            className="width-full bg-white border-gray-5 border-1px"
           >
             <div>
               {images.map((_, index) => (
