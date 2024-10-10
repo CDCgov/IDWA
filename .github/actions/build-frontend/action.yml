@@ -1,0 +1,58 @@
+name: Build ReportVision's Front End
+description: Build the React application
+inputs:
+  deploy-env:
+    description: The environment being deployed (e.g. "prod" or "test")
+    required: true
+  frontend-tarball:
+    description: The path to the tar file containing the client code to deploy
+    required: true
+  frontend-path:
+    description: The path to the root of the frontend files
+    required: true
+  frontend-build-path:
+    description: The temporary path where build files are storaged
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+    - name: Use cache for node_modules
+      uses: actions/cache@v4
+      with:
+        path: |
+          ${{ inputs.frontend-path }}/node_modules
+        key: npm-${{ env.NODE_VERSION }}-${{ hashFiles('frontend/package.json') }}
+    - name: Install dependencies
+      working-directory: ${{ inputs.frontend-path }}
+      shell: bash
+      run: |
+        npm ci
+    - name: Build deployable frontend
+      shell: bash
+      working-directory: ${{ inputs.frontend-path }}
+      env:
+        DEPLOY_ENV: ${{ inputs.deploy-env }}
+      run: |
+        VITE_API_URL=${{ env.OCR_API_URL }} npm run build
+    - name: Test frontend
+      shell: bash
+      working-directory: ${{ inputs.frontend-path }}
+      env:
+        DEPLOY_ENV: ${{ inputs.deploy-env }}
+      run: |
+        npm run test
+    - name: Pack frontend into a tarball
+      shell: bash
+      run: |
+        tar -C ${{ inputs.frontend-build-path }} -czf ${{ inputs.frontend-tarball }} .
+    - name: Upload frontend build files
+      uses: actions/upload-artifact@v4
+      if: success()
+      with:
+        name: frontend-tarball
+        path: ${{ inputs.frontend-tarball }}
+        retention-days: 1

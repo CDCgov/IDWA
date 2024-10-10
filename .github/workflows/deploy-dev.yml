@@ -1,0 +1,61 @@
+name: Build and deploy all of ReportVision's services to a development environment
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy-env:
+        description: 'The environment to deploy to'
+        required: true
+        type: choice
+        options:
+          - dev
+          - dev2
+          - dev3
+          - dev4
+          - dev5
+          - dev6
+      ocr-version:
+        description: 'Create a version for this OCR API image'
+        required: true
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  NODE_VERSION: 20
+  OCR_API_URL: 'https://reportvision-ocr-api-dev.azurewebsites.net/'
+
+jobs:
+  build_publish_ocr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      attestations: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and Push backend
+        uses: ./.github/actions/build-publish-api
+        with:
+          docker-registry: ghcr.io
+          docker-pw: ${{ secrets.GITHUB_TOKEN }}
+          docker-username: ${{ github.actor }}
+          version: ${{ inputs.ocr-version }}
+          dockerfile-path: ./OCR/Dockerfile
+          docker-context-path: ./OCR/
+          api-name: ocr-api
+
+  build_frontend:
+    runs-on: ubuntu-latest
+    environment: dev
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/build-frontend
+        name: Build front-end application
+        with:
+          frontend-tarball: ./frontend.tgz
+          deploy-env: ${{ inputs.deploy-env }}
+          frontend-path: ./frontend
+          frontend-build-path: ./frontend/dist/
