@@ -7,7 +7,6 @@
 [2. Infrastructure Architecture](#2-infrastructure-architecture)
 
 [3. Notices](#3-notices)
-[3. Notices](#3-notices)
 - [3.1 Privacy Standard Notice](#31-privacy-standard-notice)
 - [3.2 Records Management Standard Notice](#32-records-management-standard-notice)
 - [3.3 Domestic Copyright Protection Notice](#33-domestic-copyright-protection-notice)
@@ -18,9 +17,7 @@
 - [3.8 Contributing Standard Notice](#38-contributing-standard-notice)
 
 [4. General Disclaimer](#4-general-disclaimer)
-[4. General Disclaimer](#4-general-disclaimer)
 
-[5. Other Related Documents](#5-other-related-documents)
 [5. Other Related Documents](#5-other-related-documents)
 
 
