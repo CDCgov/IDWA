@@ -57,7 +57,7 @@ The current version of the application is optimized only for PDF-based lab repor
 
 The following provides a High-Level Architectural Design of the ReportVision Azure Architecture, with OCR powered by Tesseract to enhance efficiency, user experience, and throughput.
 
-<img width="985" alt="rv-azure-architecture-diagram" src="https://github.com/user-attachments/assets/c02f9f10-90e0-4660-afa2-d77968087003" />
+<img width="985" alt="rv-azure-architecture-diagram" src="https://github.com/user-attachments/assets/d27c9b63-c6b5-466f-a83f-765251252990" />
 
 + [Return to Table of Contents](#table-of-contents).
 
