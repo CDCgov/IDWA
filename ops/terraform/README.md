@@ -4,7 +4,7 @@ Currently, our infrastructure is built specifically for Azure, with a traditiona
 
 This diagram provides a high-level overview of our Azure architectural design.
 
-<img width="985" alt="rv-azure-architecture-diagram" src="https://github.com/user-attachments/assets/4be91620-450e-4421-a826-ac41454b9aba" />
+<img width="998" alt="rv-azure-architecture-diagram" src="https://github.com/user-attachments/assets/0540c75b-548e-465e-bee6-9eea6e8e674f" />
 
 ## List of Azure Services being used
 
