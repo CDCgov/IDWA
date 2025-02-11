@@ -16,7 +16,7 @@ datasets = "^3.0.1"
 tesserocr = "^2.7.1"
 
 [tool.poetry.group.torch.dependencies]
-transformers = {extras = ["torch"], version = "^4.45.1"}
+transformers = {extras = ["torch"], version = "^4.48.0"}
 
 [tool.poetry.group.dev.dependencies]
 lxml = "^5.3.0"
